@@ -1,19 +1,13 @@
 #include <stdio.h>
-void moverBispo(int casas)
-{
-    for (int i = 0; i <= casas; i++);
-    {
-        printf("cima");
-        for (int j = 0; j <= j ; j++)
-        {
-            printf(", Direita");
-            break;
-        }
+
+void moverTorre(int casas){
+    if (casas > 0) {
+        print("Direita\n");
+        moverTorre(casas - 1);
     }
 }
-int main() {
-    printf("Desafio Xadrez\n");
-    
 
+int main () {
+    moverTorre(5);
     return 0;
 }
